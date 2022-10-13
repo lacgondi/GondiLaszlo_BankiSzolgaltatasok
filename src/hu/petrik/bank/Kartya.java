@@ -10,6 +10,11 @@ public class Kartya extends BankiSzolgaltatas{
         this.kartyaSzam = kartyaSzam;
     }
 
+    public Kartya(String kartyaSzam){
+        super(new Tulajdonos(""));
+        this.kartyaSzam=kartyaSzam;
+    }
+
     public String getKartyaSzam() {
         return kartyaSzam;
     }
