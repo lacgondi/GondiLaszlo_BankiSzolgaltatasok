@@ -1,6 +1,6 @@
 package hu.petrik.bank;
 
-public class Kartya extends BankiSzolgaltatas{
+public class Kartya extends BankiSzolgaltatas {
     private Szamla szamla;
     private String kartyaSzam;
 
@@ -10,19 +10,19 @@ public class Kartya extends BankiSzolgaltatas{
         this.kartyaSzam = kartyaSzam;
     }
 
-    public Kartya(String kartyaSzam){
+    public Kartya(String kartyaSzam) {
         super(new Tulajdonos(""));
-        this.kartyaSzam=kartyaSzam;
+        this.kartyaSzam = kartyaSzam;
     }
 
     public String getKartyaSzam() {
         return kartyaSzam;
     }
 
-    public boolean vasarlas(int osszeg){
-        if(this.szamla.getAktualisEgyenleg()-osszeg<0){
+    public boolean vasarlas(int osszeg) {
+        if (this.szamla.getAktualisEgyenleg() - osszeg < 0) {
             return false;
-        }else{
+        } else {
             this.szamla.kivesz(osszeg);
             return true;
         }

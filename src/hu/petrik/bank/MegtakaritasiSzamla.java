@@ -1,6 +1,6 @@
 package hu.petrik.bank;
 
-public class MegtakaritasiSzamla extends Szamla{
+public class MegtakaritasiSzamla extends Szamla {
     private double kamat;
     private static double alapKamat = 2;
 
@@ -22,7 +22,7 @@ public class MegtakaritasiSzamla extends Szamla{
         return super.kivesz(osszeg);
     }
 
-    public void kamatJovairas(){
-        befizet((int) (this.getAktualisEgyenleg()*kamat));
+    public void kamatJovairas() {
+        befizet((int) (this.getAktualisEgyenleg() * kamat));
     }
 }

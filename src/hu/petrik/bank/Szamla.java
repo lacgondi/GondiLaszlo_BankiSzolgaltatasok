@@ -1,6 +1,6 @@
 package hu.petrik.bank;
 
-public class Szamla extends BankiSzolgaltatas implements HasHitel{
+public class Szamla extends BankiSzolgaltatas implements HasHitel {
 
     private int aktualisEgyenleg;
 
@@ -18,20 +18,20 @@ public class Szamla extends BankiSzolgaltatas implements HasHitel{
         return aktualisEgyenleg;
     }
 
-    public void befizet(int osszeg){
-        this.aktualisEgyenleg+=osszeg;
+    public void befizet(int osszeg) {
+        this.aktualisEgyenleg += osszeg;
     }
 
-    public boolean kivesz(int osszeg){
-        if(this.aktualisEgyenleg-osszeg<0){
+    public boolean kivesz(int osszeg) {
+        if (this.aktualisEgyenleg - osszeg < 0) {
             return false;
-        }else{
-            this.aktualisEgyenleg-=osszeg;
+        } else {
+            this.aktualisEgyenleg -= osszeg;
             return true;
         }
     }
 
-    public Kartya ujKartya(String kartyaszam){
+    public Kartya ujKartya(String kartyaszam) {
         return new Kartya(kartyaszam);
     }
 }
