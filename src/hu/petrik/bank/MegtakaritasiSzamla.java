@@ -23,6 +23,6 @@ public class MegtakaritasiSzamla extends Szamla{
     }
 
     public void kamatJovairas(){
-        befizet((int) (this.getAktualisEgyenleg()*(kamat/100)));
+        befizet((int) (this.getAktualisEgyenleg()*kamat));
     }
 }
