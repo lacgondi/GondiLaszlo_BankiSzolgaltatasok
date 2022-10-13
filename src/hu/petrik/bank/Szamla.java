@@ -18,8 +18,7 @@ public class Szamla extends BankiSzolgaltatas {
     }
 
     public boolean kivesz(int osszeg){
-        if(this.aktualisEgyenleg-osszeg<=0){
-            this.aktualisEgyenleg=0;
+        if(this.aktualisEgyenleg-osszeg<0){
             return false;
         }else{
             this.aktualisEgyenleg-=osszeg;
