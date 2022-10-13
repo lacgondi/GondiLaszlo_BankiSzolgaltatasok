@@ -1,6 +1,6 @@
 package hu.petrik.bank;
 
-public class BankiSzolgaltatas {
+public abstract class BankiSzolgaltatas {
     private Tulajdonos tulajdonos;
 
     public BankiSzolgaltatas(Tulajdonos tulajdonos) {
