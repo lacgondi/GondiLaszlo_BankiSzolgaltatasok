@@ -51,7 +51,7 @@ public class Bank {
             }
         }
         for (HitelSzamla hSz:hitelSzamlaList) {
-            sum+= hSz.getHitelKeret();
+            sum+=hSz.getHitelKeret();
         }
         return sum;
     }
