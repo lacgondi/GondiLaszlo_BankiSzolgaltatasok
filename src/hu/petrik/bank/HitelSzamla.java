@@ -8,6 +8,11 @@ public class HitelSzamla extends Szamla {
         this.hitelKeret = hitelKeret;
     }
 
+    @Override
+    public boolean hasHitel() {
+        return true;
+    }
+
     public int getHitelKeret() {
         return hitelKeret;
     }

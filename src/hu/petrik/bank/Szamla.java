@@ -1,8 +1,13 @@
 package hu.petrik.bank;
 
-public class Szamla extends BankiSzolgaltatas {
+public class Szamla extends BankiSzolgaltatas implements HasHitel{
 
     private int aktualisEgyenleg;
+
+    @Override
+    public boolean hasHitel() {
+        return false;
+    }
 
     public Szamla(Tulajdonos tulajdonos) {
         super(tulajdonos);
